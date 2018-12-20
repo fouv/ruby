@@ -1,9 +1,8 @@
 voyages =
-  { "Lyon" =>"100",
-    "Marseille"=>"50",
-    "Bordeaux"=>"130",
-    "Nice"=> "40"
+  { "Lyon" =>10,
+    "Marseille"=>5,
+    "Bordeaux"=>2,
+    "Nice"=> 15
   }
-voyages.each do |ville, duree|
-  puts "Voyage à " + ville +" de " + duree +" jours."
-end
+  
+voyages.each { |k, v| puts "Voyage à #{k} de #{v} jours." }
