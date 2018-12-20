@@ -4,5 +4,10 @@ voyages =
     "Bordeaux"=>2,
     "Nice"=> 15
   }
-  
-voyages.each { |k, v| puts "Voyage à #{k} de #{v} jours." }
+
+voyages.each do |k, v|
+  if v <= 5
+    puts "Voyage à #{k} de #{v} jours."
+  else
+  end
+end
